@@ -1,0 +1,18 @@
+AddType application/x-httpd-php .html                                                                                                                                                                                                         
+
+RewriteEngine On
+
+RewriteBase /
+
+#RewriteBase /
+#RewriteCond %{HTTP_HOST} ^digital012.org
+#RewriteRule ^en/(.*)$ http://buslogic.net/$1 [L,R=301]
+
+
+# Rewrite --- https://android-bus-ticket-sale-software.com/en/ => https://android-bus-ticket-sale-software.com/en/index.html
+RewriteRule ^/en/?$ /en/index.html
+RewriteRule ^/sr/?$ /sr/index.html
+
+
+Redirect /index.html /sr/index.html
+Redirect /sitemap.xml /sr/sitemap.xml
