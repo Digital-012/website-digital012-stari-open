@@ -2,4 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/ithub/public_html/digital012.org/git-test/
-    - /bin/cp * $DEPLOYPATH
+    - /bin/rm -Rf $DEPLOYPATH
+  - /bin/mkdir $DEPLOYPATH
+  - /bin/cp -R src/ $DEPLOYPATH
