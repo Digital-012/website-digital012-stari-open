@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/ithub/public_html/digital012.org/git-test/
+    - /bin/cp * $DEPLOYPATH
